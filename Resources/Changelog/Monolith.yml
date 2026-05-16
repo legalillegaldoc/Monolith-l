@@ -21047,3 +21047,10 @@ Entries:
   id: 2321
   time: '2026-05-16T01:04:31.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3996
+- author: Mapleflavoureds
+  changes:
+    - type: Tweak
+      message: Fixed neptune disabled thruster
+  id: 2322
+  time: '2026-05-16T01:08:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/4001
