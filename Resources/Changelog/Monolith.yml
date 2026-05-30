@@ -21402,3 +21402,12 @@ Entries:
   id: 2358
   time: '2026-05-30T06:00:07.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4077
+- author: The-Aisen
+  changes:
+    - type: Add
+      message: >-
+        Access to the Rosetta experimental research vessel has been granted by
+        The System, get access to yours from any civilian shipyard.
+  id: 2359
+  time: '2026-05-30T10:33:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3884
