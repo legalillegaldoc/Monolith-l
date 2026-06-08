@@ -21467,3 +21467,16 @@ Entries:
   id: 2366
   time: '2026-06-08T09:42:19.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/4050
+- author: Tuerk
+  changes:
+    - type: Tweak
+      message: Artifact analyzers will now have their bias set to Down by default.
+    - type: Tweak
+      message: >-
+        Artifacts are worth more research points and credits now. The deeper the
+        node, the more science and credits.
+    - type: Fix
+      message: Crash when artifact analyzers had a lot of biasChance affecting bonuses.
+  id: 2367
+  time: '2026-06-08T10:47:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3839
