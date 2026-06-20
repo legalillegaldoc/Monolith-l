@@ -143,6 +143,14 @@
 # Minor companies
 
 - type: company
+  id: Hebishira
+  form: Protagonist
+  name: The Hebishira Corporate Fund
+  description: HCF-Description
+  color: "#ffffff"
+  image: /Textures/_Mono/Companies/HCF.png
+
+- type: company
   id: UniversalStatesOfAmerica
   form: Protagonist
   name: Universal States of America
