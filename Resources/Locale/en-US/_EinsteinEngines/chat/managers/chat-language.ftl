@@ -7,6 +7,7 @@ chat-language-Draconic-name = Sinta'Unathi
 chat-language-Azaziba-name = Sinta'Azaziba
 chat-language-SolCommon-name = Sol Common
 chat-language-NovuNederic-name = Novu-Nederic
+chat-language-NovaCygniBasic-name = Nova-Cygni Basic
 chat-language-TauCetiBasic-name = Basic
 chat-language-Tradeband-name = Tradeband
 chat-language-Freespeak-name = Freespeak
@@ -20,6 +21,11 @@ chat-language-Sign-name = Sign
 chat-language-Marish-name = Marish
 chat-language-Chittin-name = Chittin
 chat-language-Xeeplian-name = Xeeplian
+chat-language-Hydraspeak-name = Hy'drav'tha
+
+# Ported from Floofstation:
+chat-language-NewKinPidgin-name = Ka'rakk
+
 
 # Additional languges
 
@@ -52,3 +58,6 @@ chat-language-Pig-name = Pig
 chat-language-Sheep-name = Sheep
 chat-language-Xeno-name = Xeno
 chat-language-DroneTalk-name = Drone
+
+# Added here by Mono
+chat-language-Blob-name = Blob

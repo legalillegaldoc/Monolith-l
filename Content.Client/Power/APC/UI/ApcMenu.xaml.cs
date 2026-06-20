@@ -11,6 +11,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Localization;
 using Robust.Shared.Maths;
 using FancyWindow = Content.Client.UserInterface.Controls.FancyWindow;
+using System.Numerics;
 
 namespace Content.Client.Power.APC.UI
 {
@@ -27,11 +28,6 @@ namespace Content.Client.Power.APC.UI
             BreakerButton.OnPressed += _ => OnBreaker?.Invoke();
         }
 
-        public void SetEntity(EntityUid entity)
-        {
-            EntityView.SetEntity(entity);
-        }
-
         public void UpdateState(BoundUserInterfaceState state)
         {
             var castState = (ApcBoundInterfaceState) state;
@@ -43,7 +39,8 @@ namespace Content.Client.Power.APC.UI
 
             if (PowerLabel != null)
             {
-                PowerLabel.Text = castState.Power + " W";
+                var displayValue = castState.Power;
+                PowerLabel.Value = displayValue;
             }
 
             if (ExternalPowerStateLabel != null)

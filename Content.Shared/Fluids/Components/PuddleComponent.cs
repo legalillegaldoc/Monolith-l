@@ -1,13 +1,3 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf
-// SPDX-FileCopyrightText: 2023 Emisse
-// SPDX-FileCopyrightText: 2023 TemporalOroboros
-// SPDX-FileCopyrightText: 2023 metalgearsloth
-// SPDX-FileCopyrightText: 2024 Tayrtahn
-// SPDX-FileCopyrightText: 2025 Leon Friedrich
-// SPDX-FileCopyrightText: 2025 Princess Cheeseballs
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using Content.Shared.Chemistry.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
@@ -27,6 +17,18 @@ namespace Content.Shared.Fluids.Components
         [DataField]
         public FixedPoint2 OverflowVolume = FixedPoint2.New(20);
 
+        /// <summary>
+        /// Mono - don't bother trying to spill if we're above overflow volume but below this
+        /// </summary>
+        [DataField]
+        public FixedPoint2 OverflowThreshold = FixedPoint2.New(25);
+
+        /// <summary>
+        /// Mono - don't bother waking up for transfers below this portion of our volume
+        /// </summary>
+        [DataField]
+        public float TransferTolerance = 0.005f;
+
         [DataField("solution")] public string SolutionName = "puddle";
 
         /// <summary>
@@ -37,5 +39,6 @@ namespace Content.Shared.Fluids.Components
 
         [ViewVariables]
         public Entity<SolutionComponent>? Solution;
+
     }
 }
